@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
   <link rel="icon" href="https://cdn.shopify.com/s/files/1/2375/6461/files/TM-FINAL-LOGO_FB_cropped_32x32.jpg?v=1506436574">
 <title>Page Title</title>
-</head>
-<body>
-  <div id="nav-bar">
-  <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">Styles</a></li>
-  <li><a href="#contact"></a></li>
-  <li style="float:right"><a class="active" href="#about">About</a></li>
-</ul>
-  </div>
-  
-  <style>
-    
-    #nav-bar{
-          position: fixed;
-          left: 10px;
-          top: 0px;     
- }
-  ul {
+    ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
+    font-style: sans-serif;
+    font-size: 20px;
 }
 
 li {
     float: left;
 }
 
-li a {
-    display: block;
-    color: white;
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+   
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  #ffb3ff;
+                
+  
 }
 
-.active {
-    background-color: #4CAF50;
+li.dropdown {
+    display: inline-block;
+ 
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255,255,255);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1
+
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  
+}
+    </style>
+</head>
+<body>
+
+
+    
+    <ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Fashion</a>
+    <div class="dropdown-content">
+      <a href="">Supreme</a>
+      <a href="">Bape</a>
+      <a href="">Palace</a>
+      
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="">Footwear</a>
+    <div class="dropdown-content">
+      <a href="">Nike</a>
+      <a href="">Adidas </a>
+      <a href="">Kanye</a>
+      
+          
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="">Music</a>
+    <div class="dropdown-content">
+      <a href="">Kanye</a>
+      <a href="">Lil Pump</a>
+      <a href="">ASAP Rocky</a>
+    </div>
+  </li>
+</ul>
+    
+   
   </style>
 
 
